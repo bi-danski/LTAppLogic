@@ -1,4 +1,4 @@
-package com.lifetrack.core.network
+package com.lifetrack.model.network
 
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.HttpClientEngine

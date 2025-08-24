@@ -4,7 +4,7 @@ import core.generateLifeTrackId
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import com.lifetrack.core.network.HttpClientFactory
+import com.lifetrack.model.network.HttpClientFactory
 import com.lifetrack.model.data.User
 import com.lifetrack.services.CohereApiService
 import com.lifetrack.services.UserService

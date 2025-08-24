@@ -1,4 +1,4 @@
-package com.example.lifetrack.model.data
+package com.lifetrack.model.data
 
 data class VisitRecord(
     val date: String,
