@@ -1,4 +1,4 @@
-package com.lifetrack.model.data
+package com.lifetrack.model.data.auth
 
 sealed class AuthResult {
     data object Success : AuthResult()

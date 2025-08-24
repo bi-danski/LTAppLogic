@@ -1,44 +1,26 @@
 package com.lifetrack.model.data
-//
-//import androidx.compose.ui.graphics.vector.ImageVector
-//import java.time.LocalDate
-//
-//data class MissionItem(
-//    val id: Int,
-//    val title: String,
-//    val description: String,
-//    val status: String,
-//    val icon: ImageVector,
-//    val securityLevel: String,
-//    val date: String,
-//    val location: String,
-//    val dateObj: LocalDate
-//)
-//
-//data class HealthTip(
-//    val id: Int,
-//    val title: String,
-//    val description: String,
-//    val icon: ImageVector
-//)
-//
-//data class LabResult(
-//    val testName: String,
-//    val currentValue: Float,
-//    val previousValue: Float,
-//    val unit: String,
-//    val normalRange: String
-//)
-//
-//data class MedicalVisit(
-//    val id: Int,
-//    val date: LocalDate,
-//    val diagnosis: String,
-//    val treatment: String,
-//    val notes: String,
-//    val doctor: String,
-//    val hospital: String
-//)
+
+import java.time.LocalDate
+
+
+data class LabResult(
+    val testName: String,
+    val currentValue: Float,
+    val previousValue: Float,
+    val unit: String,
+    val normalRange: String
+)
+
+data class MedicalVisit(
+    val id: Int,
+    val date: LocalDate,
+    val diagnosis: String,
+    val treatment: String,
+    val notes: String,
+    val doctor: String,
+    val hospital: String,
+    val medications: String
+)
 
 data class Prescription(
     val medication: String,

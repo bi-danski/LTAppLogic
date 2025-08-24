@@ -4,7 +4,6 @@ import com.mongodb.client.*
 import io.ktor.server.application.*
 import io.ktor.server.config.*
 
-
 fun Application.connectToMongoDB(): MongoDatabase {
     val user = environment.config.tryGetString("db.mongo.user") ?: "root"
     val password = environment.config.tryGetString("db.mongo.password") ?: "#LifeTrackAlltheWay616"
@@ -19,4 +18,3 @@ fun Application.connectToMongoDB(): MongoDatabase {
     }
     return database
 }
-

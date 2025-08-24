@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.bson.Document
 import org.bson.types.ObjectId
-import com.lifetrack.model.data.User
+import com.lifetrack.model.data.users.User
 
 class UserService(private val database: MongoDatabase) {
     //        database.createCollection("users")
@@ -16,7 +16,8 @@ class UserService(private val database: MongoDatabase) {
     suspend fun create(user: User): String = withContext(Dispatchers.IO) {
         val doc = user.toDocument()
         collection.insertOne(doc)
-        doc["_id"].toString()
+//        doc["_id"].toString()
+        doc.toString()
     }
 
     suspend fun read(id: String): User? = withContext(Dispatchers.IO) {

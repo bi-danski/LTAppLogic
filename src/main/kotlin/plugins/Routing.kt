@@ -1,11 +1,11 @@
 package com.lifetrack.plugins
 
-import core.generateLifeTrackId
+import com.lifetrack.utils.generateLifeTrackId
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import com.lifetrack.model.network.HttpClientFactory
-import com.lifetrack.model.data.User
+import com.lifetrack.model.data.users.User
 import com.lifetrack.services.CohereApiService
 import com.lifetrack.services.UserService
 import io.ktor.client.engine.cio.CIO
